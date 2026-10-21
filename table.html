@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Список фильмов — Американские фильмы 2010–2020</title>
+</head>
+<body>
+
+<header>
+
+<ul>
+<li><a href="index.html">Американские фильмы 2010–2020</a></li>
+<li><a href="table.html"><b>Список фильмов</b></a></li>
+</ul>
+
+</header>
+
+<hr>
+
+
+
+<details open>
+<summary>График</summary>
+<form action="#">
+<h4>Значение по оси OX</h4>
+<p>
+<input type="radio" name="ox" id="ox-genre" value="genre"><label for="ox-genre">Жанр</label><br>
+<input type="radio" name="ox" id="ox-studio" value="studio"><label for="ox-studio">Студия</label><br>
+<input type="radio" name="ox" id="ox-year" value="year"><label for="ox-year">Год</label>
+</p>
+<h4>Значение по оси OY</h4>
+<p>
+<input type="checkbox" name="oy" id="oy-max" value="max"><label for="oy-max">Максимальные сборы</label><br>
+<input type="checkbox" name="oy" id="oy-min" value="min"><label for="oy-min">Минимальные сборы</label><br>
+<input type="checkbox" name="oy" id="oy-count" value="count"><label for="oy-count">Количество фильмов</label>
+</p>
+<p><input type="button" value="Построить"></p>
+</form>
+<p>Здесь будет график</p>
+</details>
+
+<details open>
+<summary>Фильтр</summary>
+<form action="#">
+<p><label for="f-title">Название:</label> <input type="text" id="f-title" name="title"></p>
+<p><label for="f-genre">Жанр:</label> <input type="text" id="f-genre" name="genre"></p>
+<p><label for="f-director">Режиссёр:</label> <input type="text" id="f-director" name="director"></p>
+<p><label for="f-studio">Студия:</label> <input type="text" id="f-studio" name="studio"></p>
+<p><label for="f-year-from">Год: от</label> <input type="number" id="f-year-from" name="year_from" min="2010" max="2020">
+<label for="f-year-to">до</label> <input type="number" id="f-year-to" name="year_to" min="2010" max="2020"></p>
+<p><label for="f-gross-from">Сборы, млн $: от</label> <input type="number" id="f-gross-from" name="gross_from" min="0">
+<label for="f-gross-to">до</label> <input type="number" id="f-gross-to" name="gross_to" min="0"></p>
+<p><input type="button" value="Найти"> <input type="reset" value="Очистить"></p>
+</form>
+</details>
+
+<details open>
+<summary>Сортировка</summary>
+<form action="#">
+<p><label for="s1">Первый уровень:</label>
+<select id="s1" name="sort1">
+<option value="" selected>Нет</option>
+<option value="title">Название</option>
+<option value="genre">Жанр</option>
+<option value="director">Режиссёр</option>
+<option value="studio">Студия</option>
+<option value="year">Год</option>
+<option value="length">Длительность</option>
+<option value="gross">Сборы</option>
+</select>
+<label for="s1-desc">по убыванию?</label> <input type="checkbox" id="s1-desc" name="sort1_desc"></p>
+<p><label for="s2">Второй уровень:</label>
+<select id="s2" name="sort2">
+<option value="" selected>Нет</option>
+<option value="title">Название</option>
+<option value="genre">Жанр</option>
+<option value="director">Режиссёр</option>
+<option value="studio">Студия</option>
+<option value="year">Год</option>
+<option value="length">Длительность</option>
+<option value="gross">Сборы</option>
+</select>
+<label for="s2-desc">по убыванию?</label> <input type="checkbox" id="s2-desc" name="sort2_desc"></p>
+<p><label for="s3">Третий уровень:</label>
+<select id="s3" name="sort3">
+<option value="" selected>Нет</option>
+<option value="title">Название</option>
+<option value="genre">Жанр</option>
+<option value="director">Режиссёр</option>
+<option value="studio">Студия</option>
+<option value="year">Год</option>
+<option value="length">Длительность</option>
+<option value="gross">Сборы</option>
+</select>
+<label for="s3-desc">по убыванию?</label> <input type="checkbox" id="s3-desc" name="sort3_desc"></p>
+<p><input type="button" value="Сортировать"></p>
+</form>
+</details>
+
+<table border="1" cellpadding="4" cellspacing="0">
+<caption>Американские фильмы 2010–2020 годов</caption>
+<thead>
+<tr><th>Название</th><th>Жанр</th><th>Режиссёр</th><th>Студия</th><th>Год</th><th>Длительность, мин</th><th>Сборы, млн $</th></tr>
+</thead>
+<tbody>
+<tr><td>Начало</td><td>Фантастика</td><td>Кристофер Нолан</td><td>Warner Bros.</td><td>2010</td><td>148</td><td>837</td></tr>
+<tr><td>Социальная сеть</td><td>Драма</td><td>Дэвид Финчер</td><td>Columbia Pictures</td><td>2010</td><td>120</td><td>225</td></tr>
+<tr><td>История игрушек 3</td><td>Анимация</td><td>Ли Анкрич</td><td>Disney / Pixar</td><td>2010</td><td>103</td><td>1067</td></tr>
+<tr><td>Чёрный лебедь</td><td>Триллер</td><td>Даррен Аронофски</td><td>Fox Searchlight</td><td>2010</td><td>108</td><td>329</td></tr>
+<tr><td>Остров проклятых</td><td>Триллер</td><td>Мартин Скорсезе</td><td>Paramount Pictures</td><td>2010</td><td>138</td><td>295</td></tr>
+<tr><td>Железный человек 2</td><td>Боевик</td><td>Джон Фавро</td><td>Paramount Pictures</td><td>2010</td><td>124</td><td>624</td></tr>
+<tr><td>Драйв</td><td>Криминал</td><td>Николас Виндинг Рефн</td><td>FilmDistrict</td><td>2011</td><td>100</td><td>81</td></tr>
+<tr><td>Человек, который изменил всё</td><td>Драма</td><td>Беннетт Миллер</td><td>Columbia Pictures</td><td>2011</td><td>133</td><td>110</td></tr>
+<tr><td>Мстители</td><td>Боевик</td><td>Джосс Уидон</td><td>Walt Disney Pictures</td><td>2012</td><td>143</td><td>1519</td></tr>
+<tr><td>Тёмный рыцарь: Возрождение легенды</td><td>Боевик</td><td>Кристофер Нолан</td><td>Warner Bros.</td><td>2012</td><td>164</td><td>1081</td></tr>
+<tr><td>Джанго освобождённый</td><td>Вестерн</td><td>Квентин Тарантино</td><td>Columbia Pictures</td><td>2012</td><td>165</td><td>425</td></tr>
+<tr><td>Голодные игры</td><td>Фантастика</td><td>Гэри Росс</td><td>Lionsgate</td><td>2012</td><td>142</td><td>694</td></tr>
+<tr><td>Операция «Арго»</td><td>Триллер</td><td>Бен Аффлек</td><td>Warner Bros.</td><td>2012</td><td>120</td><td>232</td></tr>
+<tr><td>Гравитация</td><td>Фантастика</td><td>Альфонсо Куарон</td><td>Warner Bros.</td><td>2013</td><td>91</td><td>723</td></tr>
+<tr><td>Холодное сердце</td><td>Анимация</td><td>Крис Бак</td><td>Walt Disney Pictures</td><td>2013</td><td>102</td><td>1290</td></tr>
+<tr><td>Волк с Уолл-стрит</td><td>Комедия</td><td>Мартин Скорсезе</td><td>Paramount Pictures</td><td>2013</td><td>180</td><td>392</td></tr>
+<tr><td>Она</td><td>Драма</td><td>Спайк Джонз</td><td>Warner Bros.</td><td>2013</td><td>126</td><td>48</td></tr>
+<tr><td>Интерстеллар</td><td>Фантастика</td><td>Кристофер Нолан</td><td>Paramount Pictures</td><td>2014</td><td>169</td><td>677</td></tr>
+<tr><td>Одержимость</td><td>Драма</td><td>Дэмьен Шазелл</td><td>Sony Pictures Classics</td><td>2014</td><td>107</td><td>49</td></tr>
+<tr><td>Стражи Галактики</td><td>Фантастика</td><td>Джеймс Ганн</td><td>Walt Disney Pictures</td><td>2014</td><td>121</td><td>773</td></tr>
+<tr><td>Исчезнувшая</td><td>Триллер</td><td>Дэвид Финчер</td><td>20th Century Fox</td><td>2014</td><td>149</td><td>369</td></tr>
+<tr><td>Отель «Гранд Будапешт»</td><td>Комедия</td><td>Уэс Андерсон</td><td>Fox Searchlight</td><td>2014</td><td>99</td><td>175</td></tr>
+<tr><td>Бёрдмэн</td><td>Комедия</td><td>Алехандро Гонсалес Иньярриту</td><td>Fox Searchlight</td><td>2014</td><td>119</td><td>103</td></tr>
+<tr><td>Выживший</td><td>Приключения</td><td>Алехандро Гонсалес Иньярриту</td><td>20th Century Fox</td><td>2015</td><td>156</td><td>533</td></tr>
+<tr><td>Марсианин</td><td>Фантастика</td><td>Ридли Скотт</td><td>20th Century Fox</td><td>2015</td><td>144</td><td>630</td></tr>
+<tr><td>Звёздные войны: Пробуждение силы</td><td>Фантастика</td><td>Джей Джей Абрамс</td><td>Walt Disney Pictures</td><td>2015</td><td>138</td><td>2068</td></tr>
+<tr><td>Мир юрского периода</td><td>Приключения</td><td>Колин Треворроу</td><td>Universal Pictures</td><td>2015</td><td>124</td><td>1671</td></tr>
+<tr><td>В центре внимания</td><td>Драма</td><td>Том Маккарти</td><td>Open Road Films</td><td>2015</td><td>129</td><td>98</td></tr>
+<tr><td>Головоломка</td><td>Анимация</td><td>Пит Доктер</td><td>Disney / Pixar</td><td>2015</td><td>95</td><td>858</td></tr>
+<tr><td>Ла-Ла Ленд</td><td>Мюзикл</td><td>Дэмьен Шазелл</td><td>Lionsgate</td><td>2016</td><td>128</td><td>472</td></tr>
+<tr><td>Лунный свет</td><td>Драма</td><td>Барри Дженкинс</td><td>A24</td><td>2016</td><td>111</td><td>65</td></tr>
+<tr><td>Прибытие</td><td>Фантастика</td><td>Дени Вильнёв</td><td>Paramount Pictures</td><td>2016</td><td>116</td><td>203</td></tr>
+<tr><td>Дэдпул</td><td>Комедия</td><td>Тим Миллер</td><td>20th Century Fox</td><td>2016</td><td>108</td><td>783</td></tr>
+<tr><td>Зверополис</td><td>Анимация</td><td>Байрон Ховард</td><td>Walt Disney Pictures</td><td>2016</td><td>108</td><td>1025</td></tr>
+<tr><td>Манчестер у моря</td><td>Драма</td><td>Кеннет Лонерган</td><td>Amazon Studios</td><td>2016</td><td>137</td><td>79</td></tr>
+<tr><td>Первый мститель: Противостояние</td><td>Боевик</td><td>Энтони и Джо Руссо</td><td>Walt Disney Pictures</td><td>2016</td><td>147</td><td>1153</td></tr>
+<tr><td>Прочь</td><td>Ужасы</td><td>Джордан Пил</td><td>Universal Pictures</td><td>2017</td><td>104</td><td>255</td></tr>
+<tr><td>Бегущий по лезвию 2049</td><td>Фантастика</td><td>Дени Вильнёв</td><td>Warner Bros.</td><td>2017</td><td>163</td><td>276</td></tr>
+<tr><td>Оно</td><td>Ужасы</td><td>Андрес Мускетти</td><td>Warner Bros.</td><td>2017</td><td>135</td><td>702</td></tr>
+<tr><td>Тайна Коко</td><td>Анимация</td><td>Ли Анкрич</td><td>Disney / Pixar</td><td>2017</td><td>105</td><td>815</td></tr>
+<tr><td>Леди Бёрд</td><td>Драма</td><td>Грета Гервиг</td><td>A24</td><td>2017</td><td>94</td><td>79</td></tr>
+<tr><td>Тор: Рагнарёк</td><td>Боевик</td><td>Тайка Вайтити</td><td>Walt Disney Pictures</td><td>2017</td><td>130</td><td>855</td></tr>
+<tr><td>Чёрная пантера</td><td>Боевик</td><td>Райан Куглер</td><td>Walt Disney Pictures</td><td>2018</td><td>134</td><td>1350</td></tr>
+<tr><td>Мстители: Война бесконечности</td><td>Боевик</td><td>Энтони и Джо Руссо</td><td>Walt Disney Pictures</td><td>2018</td><td>149</td><td>2052</td></tr>
+<tr><td>Звезда родилась</td><td>Мюзикл</td><td>Брэдли Купер</td><td>Warner Bros.</td><td>2018</td><td>136</td><td>436</td></tr>
+<tr><td>Зелёная книга</td><td>Комедия</td><td>Питер Фаррелли</td><td>Universal Pictures</td><td>2018</td><td>130</td><td>322</td></tr>
+<tr><td>Тихое место</td><td>Ужасы</td><td>Джон Красински</td><td>Paramount Pictures</td><td>2018</td><td>90</td><td>341</td></tr>
+<tr><td>Мстители: Финал</td><td>Боевик</td><td>Энтони и Джо Руссо</td><td>Walt Disney Pictures</td><td>2019</td><td>181</td><td>2799</td></tr>
+<tr><td>Джокер</td><td>Драма</td><td>Тодд Филлипс</td><td>Warner Bros.</td><td>2019</td><td>122</td><td>1079</td></tr>
+<tr><td>Однажды в… Голливуде</td><td>Комедия</td><td>Квентин Тарантино</td><td>Columbia Pictures</td><td>2019</td><td>161</td><td>377</td></tr>
+<tr><td>Достать ножи</td><td>Детектив</td><td>Райан Джонсон</td><td>Lionsgate</td><td>2019</td><td>130</td><td>312</td></tr>
+<tr><td>Король Лев</td><td>Приключения</td><td>Джон Фавро</td><td>Walt Disney Pictures</td><td>2019</td><td>118</td><td>1663</td></tr>
+<tr><td>История игрушек 4</td><td>Анимация</td><td>Джош Кули</td><td>Disney / Pixar</td><td>2019</td><td>100</td><td>1073</td></tr>
+<tr><td>Ford против Ferrari</td><td>Драма</td><td>Джеймс Мэнголд</td><td>20th Century Fox</td><td>2019</td><td>152</td><td>225</td></tr>
+<tr><td>Довод</td><td>Фантастика</td><td>Кристофер Нолан</td><td>Warner Bros.</td><td>2020</td><td>150</td><td>365</td></tr>
+<tr><td>Душа</td><td>Анимация</td><td>Пит Доктер</td><td>Disney / Pixar</td><td>2020</td><td>100</td><td>121</td></tr>
+<tr><td>Земля кочевников</td><td>Драма</td><td>Хлоя Чжао</td><td>Searchlight Pictures</td><td>2020</td><td>108</td><td>39</td></tr>
+</tbody>
+</table>
+
+
+<hr>
+
+<footer>
+<p>Разработчик: Фаленчи Михаил, группа Б9124-09.03.04(6)</p>
+</footer>
+
+</body>
+</html>
